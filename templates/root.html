@@ -10,12 +10,19 @@
         <link rel="stylesheet" href="/public/css/angular-bootstrap-lightbox.min.css">
         <link rel="shortcut icon" href="/public/images/favicon.ico" type="image/vnd.microsoft.icon">
         <link rel='stylesheet' href='/public/css/textAngular.css'>
+        <link rel='stylesheet' href='/public/css/custom.css'>
         <base href="/main/">
     </head>
 
     <body ng-app="rootApp">
         <div class="container-fluid">
-            <nav class="navbar navbar-default" ng-controller="navController">
+            <nav class="navbar navbar-default navbar-fixed-top" ng-controller="navController">
+
+                <div id="navbar-top-row" class="row">
+                    <div class="col-md-12">
+                        <span class="h5"><strong>Some text</strong></span>
+                    </div>
+                </div>
 
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" ng-click="isNavCollapsed = !isNavCollapsed">
@@ -23,32 +30,76 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="/">
                         <span>Brand Ident</span>
                     </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbar-collapse-div" uib-collapse="isNavCollapsed">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#" ng-click="listJobs()">Menu Option 1</a></li>
-                        <li class="active"><a href="#" ng-click="listViews()">Menu Option 2</a></li>
+                        <li class="active"><a href="/">Menu Option 1</a></li>
+                        <li class="active"><a href="/">Menu Option 2</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
 
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12 col-xs-12">
-                    <span class="h1">Heading</span>
+        <div id="main-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <p class="text-center">
+                            <span class="h1">Heading</span>
+                        </p>
+                    </div>
                 </div>
             </div>
+
+            <div class="container-fluid">
+                <div class="col-md-2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span class="h5">
+                                Panel Heading
+                            </span>
+                        </div>
+
+                        <div class="panel-body">
+                            <span class="h6">
+                                Panel Body
+                            </span>
+                        </div>
+
+                        <div class="panel-footer">
+                            <span class="h6">
+                                Panel Footer
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="partial-container" class="col-md-8">
+                    <div ng-view></div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12" ng-repeat="detail in sampleDetails">
+                                    <span class="h6" ng-bind-html="detail"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
         </div>
 
-        <div class="container" id="partial-container">
-            <div ng-view></div>
-        </div>
 
         <script src="/public/js/angular.min.js" type="text/javascript"></script>
 

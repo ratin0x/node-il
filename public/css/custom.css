@@ -1,0 +1,18 @@
+body {
+    font-family: "Open Sans",Aller,Arial,sans-serif;
+}
+
+.ui-scrollpoint {
+    position: fixed;
+}
+
+#main-section {
+    margin-top: 80px;
+}
+
+div#navbar-top-row {
+    background-image: url('/public/images/governments.jpg');
+    background-repeat: repeat-x;
+    background-size: auto 40px;
+    color: white;
+}

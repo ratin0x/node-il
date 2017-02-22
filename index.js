@@ -50,14 +50,3 @@ Glue.compose( manifest, options, function( err, server ) {
         //API on port 8042 - see /config/manifest.json
     });
 });
-
-//server.register = function(server, options, next) {
-//    server.route({
-//        path: '/',
-//        method: 'GET',
-//        handler: require('./main')
-//    });
-//
-//    next();
-//
-//};
