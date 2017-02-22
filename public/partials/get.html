@@ -1,0 +1,22 @@
+<div ng-controller="testController">
+    <!--<div class="row">-->
+        <!--<span>Hello</span> <span>{{testVar}}</span>-->
+    <!--</div>-->
+
+    <!--<div class="row">-->
+        <!--<div class="col-md-3">-->
+            <!--<button class="btn btn-default" ng-click="testData()">Test Data</button>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="row" ng-repeat="t in test">-->
+        <!--<span>{{t.name}}</span>&nbsp;<span>{{t.value}}</span>-->
+    <!--</div>-->
+
+    <div class="row" ng-show="jenkinsJobs" ng-repeat="job in jenkinsJobs">
+        <span class="col-md-3">{{job.name}}</span>
+        <span class="col-md-3"><a ng-href="{{job.name}}">{{job.name}}</a></span>
+        <span class="col-md-1"><a ng-href="{{job.name}}/build?delay=0sec"><span class="fa fa-play"></span>
+    </div>
+
+</div>

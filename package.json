@@ -1,0 +1,28 @@
+{
+  "name": "node-skeleton",
+  "version": "1.0.0",
+  "description": "Skeleton Node-hapi server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://BRI-01-GIT-01/paul.fox/node-skeleton.git"
+  },
+  "keywords": [
+    "node",
+    "hapi",
+    "skeleton"
+  ],
+  "author": "Paul Fox",
+  "license": "ISC",
+  "dependencies": {
+    "glue": "^2.4.0",
+    "handlebars": "^4.0.4",
+    "hapi": "^11.0.5",
+    "hoek": "^3.0.1",
+    "inert": "^3.2.0",
+    "vision": "^4.0.0"
+  }
+}

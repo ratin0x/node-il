@@ -1,0 +1,27 @@
+{
+  "server": {
+    "app": {
+      "slogan": "Hapi Skeleton"
+    }
+  },
+  "connections": [
+        {            
+          "port": 8042,
+          "labels": ["api"]
+        }
+    ],
+    "plugins": [
+        {"./main": [
+            {
+                "select": ["api"],
+                "options": {}
+            }
+        ]},
+        {"./testing": [
+            {
+                "select": ["api"],
+                "options": {}
+            }
+        ]}
+    ]
+}
