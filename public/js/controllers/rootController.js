@@ -21,6 +21,7 @@ function rootController( $scope, $rootScope, $http, $location, $route, $routePar
 
                       Phasellus ac lacinia dui. Etiam ac dui quam. Etiam faucibus feugiat purus, ut pharetra ex tincidunt in. Nunc justo nunc, porttitor vel pharetra quis, porta vitae libero. Aenean dignissim nisi ligula, id tristique nunc aliquam non. Nulla faucibus laoreet lobortis. Praesent placerat sodales metus blandit bibendum. Etiam in enim mi. Morbi id imperdiet massa, cursus blandit massa. Aenean feugiat tincidunt purus, vel ultricies risus malesuada nec. Cras ut sapien scelerisque ipsum imperdiet elementum. Suspendisse congue neque non faucibus feugiat.`;
 
+    $scope.testVar = $scope.testVar + '\n' + $scope.testVar;
 
 //    console.log( $scope.testVar );
 
