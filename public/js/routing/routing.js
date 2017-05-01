@@ -8,8 +8,8 @@
 //}]);
 
 angular.module('rootApp').config([ '$routeProvider', '$httpProvider', '$locationProvider', function($routeProvider, $httpProvider, $locationProvider) {
-    $routeProvider.when('/blah', {
-       templateUrl : '/public/partials/rootContent.html',
+    $routeProvider.when('/setup', {
+       templateUrl : '/public/partials/setupContent.html',
        controller : 'rootController'
     }).otherwise({
        templateUrl : '/public/partials/rootContent.html',

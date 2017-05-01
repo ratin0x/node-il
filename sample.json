@@ -1,0 +1,34 @@
+{
+  "choices": [
+    {
+      "index": 1,
+      "yes" : 2,
+      "no" : 3,
+      "image": "http://i.onionstatic.com/avclub/5555/49/16x9/960.jpg",
+      "weighting": 1
+    },
+    {
+      "index": 2,
+      "yes" : 3,
+      "no" : 4,
+      "image": "http://www.konbini.com/en/files/2017/03/social-1.jpg",
+      "weighting": 2
+    },
+    {
+      "index": 3,
+      "yes" : 2,
+      "no" : 1,
+      "image": "http://i.onionstatic.com/avclub/5495/73/16x9/960.jpg",
+      "weighting": 3
+    }
+  ],
+  "responses" : [
+    {
+      "question": "do you like this?",
+      "answers" : [
+        "yes",
+        "no"
+      ]
+    }
+  ]
+}

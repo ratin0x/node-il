@@ -1,7 +1,8 @@
 module.exports = function (request, reply) {
     var context = {
-        pageTitle: 'Create'
+        pageTitle: 'Setup'
     };
 
-    reply( "Create" );
+    reply.file('templates/setup.html');
+
 };

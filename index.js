@@ -39,6 +39,12 @@ Glue.compose( manifest, options, function( err, server ) {
     });
 
     server.route({
+        path: '/setup',
+        method: 'GET',
+        handler: require('./setup')
+    });
+
+    server.route({
         path: '/',
         method: 'GET',
         handler: require('./root')

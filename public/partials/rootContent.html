@@ -1,4 +1,26 @@
 <div class="row">
-    <span>Hello</span> <span>{{testVar}}</span>
+    <div class="col-md-12">
+        <p>
+            <img ng-src="{{appData.current.url}}" width="50%">
+        </p>
+
+        <div class="col-md-12">
+            <div ng-attr-class="col-md-{{12 / appData.choices.length}}" ng-repeat="choice in appData.choices">
+                <button class="btn btn-default" ng-click="addMore(choice, appData.current )">{{choice}}</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <button class="btn btn-default" ng-click="getResults()">Results</button>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12" ng-repeat="result in appData.resultData | orderBy: value">
+            <span class="col-md-4">{{result.name}}</span>
+            <span class="col-lg-2">{{result.value}}</span>
+        </div>
+    </div>
+
 </div>
 
